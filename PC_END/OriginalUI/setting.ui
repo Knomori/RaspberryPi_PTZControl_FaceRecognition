@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main_setting</class>
+ <widget class="QDialog" name="main_setting">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>452</width>
+    <height>717</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>系统首选项</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>170</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>19</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>首选项</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>20</y>
+     <width>161</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="pyqt_resorce_file.qrc">:/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/PC_END/OriginalUI/设置.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>268</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>服务器相关：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>302</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>通信服务器端口：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>358</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>图像服务器端口：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_commPort">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>300</y>
+     <width>113</width>
+     <height>33</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_imgPort">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>350</y>
+     <width>113</width>
+     <height>33</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>410</y>
+     <width>161</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string> 当遇到端口占用时：</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_port">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>400</y>
+     <width>141</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string extracomment="不自动切换端口程序可能会崩溃">不自动切换端口</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string extracomment="当自动切换端口时您必须手动配置客户端端口">自动切换端口</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>470</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>程序相关：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>510</y>
+     <width>161</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>         显示检测频率：</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_frequence">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>500</y>
+     <width>91</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>高</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>中</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton_cancle">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>620</y>
+     <width>121</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>放弃修改</string>
+   </property>
+   <property name="icon">
+    <iconset resource="pyqt_resorce_file.qrc">
+     <normaloff>:/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/PC_END/OriginalUI/关闭.png</normaloff>:/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/PC_END/OriginalUI/关闭.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_modify">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>620</y>
+     <width>121</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确认修改</string>
+   </property>
+   <property name="icon">
+    <iconset resource="pyqt_resorce_file.qrc">
+     <normaloff>:/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/PC_END/OriginalUI/编辑.png</normaloff>:/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/PC_END/OriginalUI/编辑.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="pyqt_resorce_file.qrc"/>
+  <include location="pyqt_resorce_file.qrc"/>
+ </resources>
+ <connections/>
+</ui>

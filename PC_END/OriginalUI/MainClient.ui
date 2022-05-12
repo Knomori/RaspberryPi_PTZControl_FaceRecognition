@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>985</width>
+    <height>549</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>985</width>
+    <height>549</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>985</width>
+    <height>549</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string extracomment="树莓派人脸识别与追踪服务端">基于树莓派的人脸追踪和识别——客户端</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="pyqt_resorce_file.qrc">
+    <normaloff>:/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/PC_END/OriginalUI/人脸识别.png</normaloff>:/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/PC_END/OriginalUI/人脸识别.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_showPic_shendBack">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>600</width>
+      <height>450</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{background-color:white;}</string>
+    </property>
+    <property name="text">
+     <string>程序正在初始化...</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_soildText_1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>捕获图像：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_soildText_2">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>40</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>判定结果：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_showResult_Img">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>90</y>
+      <width>210</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>正在初始化</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>370</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_Name" stretch="4,6">
+     <item>
+      <widget class="QLabel" name="label_soildText_3">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>姓名：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_showName">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>未知人员</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>420</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_Number" stretch="4,7">
+     <item>
+      <widget class="QLabel" name="label_soildText_4">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>身份识别码：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_showNumber">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>未知人员</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>985</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_data">
+    <property name="title">
+     <string>数据</string>
+    </property>
+    <widget class="QMenu" name="menu">
+     <property name="title">
+      <string>导出数据</string>
+     </property>
+     <addaction name="action_output_Excel"/>
+     <addaction name="action_output_SQLite"/>
+    </widget>
+    <addaction name="action_addPesion"/>
+    <addaction name="menu"/>
+    <addaction name="action_show_check"/>
+    <addaction name="separator"/>
+    <addaction name="action_train_face"/>
+   </widget>
+   <widget class="QMenu" name="menu_about">
+    <property name="title">
+     <string>关于</string>
+    </property>
+    <addaction name="action_about"/>
+   </widget>
+   <widget class="QMenu" name="menu_network">
+    <property name="title">
+     <string>网络</string>
+    </property>
+    <addaction name="action_server"/>
+    <addaction name="separator"/>
+    <addaction name="action_restart_img"/>
+    <addaction name="action_restar_comm"/>
+   </widget>
+   <widget class="QMenu" name="menu_file">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_main_settings"/>
+    <addaction name="separator"/>
+    <addaction name="action_exit_app"/>
+   </widget>
+   <addaction name="menu_file"/>
+   <addaction name="menu_data"/>
+   <addaction name="menu_network"/>
+   <addaction name="menu_about"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_setNet">
+   <property name="text">
+    <string>网络参数设置</string>
+   </property>
+  </action>
+  <action name="action_train_face">
+   <property name="text">
+    <string>训练数据</string>
+   </property>
+  </action>
+  <action name="action_server">
+   <property name="text">
+    <string>服务器状态</string>
+   </property>
+  </action>
+  <action name="action_about">
+   <property name="text">
+    <string>关于本程序</string>
+   </property>
+  </action>
+  <action name="action_exit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>训练数据</string>
+   </property>
+  </action>
+  <action name="action_addPesion">
+   <property name="text">
+    <string>导入新数据</string>
+   </property>
+  </action>
+  <action name="action_exit_app">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="action_show_check">
+   <property name="text">
+    <string>今日打卡情况</string>
+   </property>
+  </action>
+  <action name="action_main_settings">
+   <property name="text">
+    <string>首选项</string>
+   </property>
+  </action>
+  <action name="action_output_Excel">
+   <property name="text">
+    <string>作为Excel文件导出</string>
+   </property>
+  </action>
+  <action name="action_output_SQLite">
+   <property name="text">
+    <string>作为SQLite文件导出</string>
+   </property>
+  </action>
+  <action name="action_restart_img">
+   <property name="text">
+    <string>重新开启图像服务器</string>
+   </property>
+  </action>
+  <action name="action_restar_comm">
+   <property name="text">
+    <string>重新开启通信服务器</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="pyqt_resorce_file.qrc"/>
+ </resources>
+ <connections/>
+</ui>

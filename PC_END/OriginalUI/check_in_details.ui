@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1360</width>
+    <height>740</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>今日打卡详情</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>1111</width>
+     <height>701</height>
+    </rect>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>209</number>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>数据库识别序号</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>姓名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>身份识别码</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>是否打卡</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>打卡时间</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="button_refresh">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>2</y>
+     <width>151</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>  刷新数据</string>
+   </property>
+   <property name="icon">
+    <iconset resource="pyqt_resorce_file.qrc">
+     <normaloff>:/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/PC_END/OriginalUI/刷新.png</normaloff>:/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/PC_END/OriginalUI/刷新.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_modify_data">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>2</y>
+     <width>151</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>  写入修改</string>
+   </property>
+   <property name="icon">
+    <iconset resource="pyqt_resorce_file.qrc">
+     <normaloff>:/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/PC_END/OriginalUI/编辑.png</normaloff>:/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/PC_END/OriginalUI/编辑.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>2</y>
+     <width>371</width>
+     <height>33</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_search">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>2</y>
+     <width>161</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>按照姓名查找</string>
+   </property>
+   <property name="icon">
+    <iconset resource="pyqt_resorce_file.qrc">
+     <normaloff>:/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/PC_END/OriginalUI/搜索.png</normaloff>:/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/PC_END/OriginalUI/搜索.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>1150</x>
+     <y>60</y>
+     <width>171</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="pyqt_resorce_file.qrc">:/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/PC_END/OriginalUI/表格.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>1140</x>
+     <y>230</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>今日打卡数据统计</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>1130</x>
+     <y>290</y>
+     <width>221</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>        截止目前的打卡情况统计，您可以双击“是否打卡”和“打卡时间”这两列的单元格，然后对其内容进行编辑。</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_close_page">
+   <property name="geometry">
+    <rect>
+     <x>1150</x>
+     <y>680</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>  关闭页面</string>
+   </property>
+   <property name="icon">
+    <iconset resource="pyqt_resorce_file.qrc">
+     <normaloff>:/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/PC_END/OriginalUI/关闭.png</normaloff>:/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/PC_END/OriginalUI/关闭.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="pyqt_resorce_file.qrc"/>
+ </resources>
+ <connections/>
+</ui>

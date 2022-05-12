@@ -1,0 +1,24 @@
+<RCC>
+  <qresource prefix="/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/PC_END/OriginalUI/">
+    <file>服务器更新升级.png</file>
+    <file>refresh.png</file>
+    <file>图像.png</file>
+    <file>对话.png</file>
+    <file>服务器.png</file>
+    <file>设置.png</file>
+    <file>关闭.png</file>
+    <file>表格.png</file>
+    <file>天平.png</file>
+    <file>提示.png</file>
+    <file>等待.png</file>
+    <file>错误.png</file>
+    <file>搜索.png</file>
+    <file>刷新.png</file>
+    <file>编辑.png</file>
+    <file>正确.png</file>
+    <file>添加新的人信息.png</file>
+    <file>照相机.png</file>
+    <file>文件夹.png</file>
+    <file>人脸识别.png</file>
+  </qresource>
+</RCC>

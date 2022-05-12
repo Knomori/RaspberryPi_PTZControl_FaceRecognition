@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>setting_UI</class>
+ <widget class="QDialog" name="setting_UI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>421</width>
+    <height>666</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>首选项——树莓派</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>30</y>
+     <width>161</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>设置.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>190</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>21</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>树莓派端首选项</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>272</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>服务器地址：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_ip">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>272</y>
+     <width>151</width>
+     <height>33</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>322</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>通信端端口：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_commPort">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>322</y>
+     <width>151</width>
+     <height>33</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>372</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>图像端端口：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_imgPort">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>372</y>
+     <width>151</width>
+     <height>33</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_imgFrames">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>422</y>
+     <width>51</width>
+     <height>33</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>422</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>图像稳定数：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>430</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>如无必要，请勿修改</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_cancle">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>560</y>
+     <width>111</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>   取消</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>关闭.png</normaloff>关闭.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_yes">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>560</y>
+     <width>121</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string> 确认修改</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>编辑.png</normaloff>编辑.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
