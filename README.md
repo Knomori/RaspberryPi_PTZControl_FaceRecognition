@@ -15,7 +15,7 @@
 
   你需要自己新建一个名为`user_database.db`的SQLite数据库文件，它的路径在`RaspberryPi_PTZControl_FaceRecognition/PC_END/LocalData/`下，你需要按照下面的信息来创建这个SQLite数据库文件，你可以使用DB-Browser For SQLite这个软件来进行创建。
 
-  ![数据库创建信息](/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/README-PIC/数据库表定义.png)
+  ![数据库创建信息](README-PIC/数据库表定义.png)
 
 或者您也可以使用上面给出的SQL语言来快速创建。
 
@@ -25,7 +25,7 @@
 
 在创建完所需要的环境之后，这个文件夹下的文件看起来像下面这样：
 
-![](/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/README-PIC/路径内留存的文件.png)
+![](README-PIC/路径内留存的文件.png)
 
 - **配置软件运行环境：**
 
@@ -37,7 +37,7 @@
 
 - [x] 树莓派的系统：
 
-![树莓派端环境](/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/README-PIC/树莓派环境.png)
+![树莓派端环境](README-PIC/树莓派环境.png)
 
 - **配置硬件环境**
 
@@ -45,13 +45,13 @@
 
 用树莓派的GPIO口连接到舵机，GPIO17控制线控制垂直方向转动的舵机、GPIO27号控制水平方向转动的舵机。连接线路是这样的：（注意GPIO编号和引脚顺序编号是不一样的）
 
-![连接方式](/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/README-PIC/树莓派与舵机的连接画面.png)
+![连接方式](README-PIC/树莓派与舵机的连接画面.png)
 
-![GPIO对照](/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/README-PIC/GPIO对照表.png)
+![GPIO对照](README-PIC/GPIO对照表.png)
 
 连接完成之后大概是这个样子：
 
-![连接好线路的实物图](/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/README-PIC/连接线路实物.png)
+![连接好线路的实物图](README-PIC/连接线路实物.png)
 
 在你创建完成好了上述文件之后，并且配置了运行环境后，就可以运行它了。在PC端，您可以直接运行`main.py`文件，或者是用PyCharm直接执行这个文件，如果你配置好了本地运行环境和所需要的依赖包的话，不出意外应该可以正常运行。树莓派端的软件也是同样的道理，同样也是main.稍后会对环境配置方面进行一些提示。
 
@@ -59,19 +59,19 @@
 
 ### PC端部分截图：
 
-![主界面（已打码）](/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/README-PIC/主界面.png)
+![主界面（已打码）](README-PIC/主界面.png)
 
-![菜单](/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/README-PIC/菜单.png)
+![菜单](README-PIC/菜单.png)
 
-![](/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/README-PIC/数据导入页面.png)
+![数据导入页面](README-PIC/数据导入页面.png)
 
-![关于本程序画面](/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/README-PIC/关于本程序.png)
+![关于本程序画面](README-PIC/关于本程序.png)
 
 ### 树莓派端部分截图：
 
-![树莓派端主画面](/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/README-PIC/树莓派端.png)
+![树莓派端主画面](README-PIC/树莓派端.png)
 
-![树莓派端设置画面](/home/knomori/Desktop/RaspberryPi_PTZControl_FaceRecognition/README-PIC/树莓派端设置画面.png)
+![树莓派端设置画面](README-PIC/树莓派端设置画面.png)
 
 
 
